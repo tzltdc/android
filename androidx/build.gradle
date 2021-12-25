@@ -3,7 +3,8 @@ apply plugin: 'com.android.library'
 android {
   compileSdkVersion 30
   defaultConfig {
-    minSdkVersion    21
+    minSdkVersion 21
+    //noinspection OldTargetApi
     targetSdkVersion 30
   }
   compileOptions {
@@ -14,13 +15,43 @@ android {
 
 dependencies {
 
+  api "com.google.android.material:material:${material}"
   api "com.uber.autodispose:autodispose-android-archcomponents:${autoDispose}"
   api "io.reactivex.rxjava2:rxandroid:${rxandroid}"
   api "com.f2prateek.rx.preferences2:rx-preferences:${rxPreferences}"
 
+  //noinspection GradleDependency
   api "androidx.appcompat:appcompat:${androidxAppcompat}"
+  //noinspection GradleDependency
   api "androidx.fragment:fragment:${androidxFragment}"
+  //noinspection GradleDependency
   api "androidx.activity:activity:${androidxActivity}"
+  //noinspection GradleDependency
+  api "androidx.lifecycle:lifecycle-common-java8:${androidxLifecycle}"
+  //noinspection GradleDependency
+  api "androidx.lifecycle:lifecycle-process:${androidxLifecycle}"
+  //noinspection GradleDependency
+  api "androidx.core:core:${androidxCore}"
+  //noinspection GradleDependency
+  api "androidx.annotation:annotation:${androidxAnnotation}"
+  //noinspection GradleDependency
+  api "androidx.lifecycle:lifecycle-service:${androidxLifecycle}"
+  api "androidx.viewpager2:viewpager2:${androidxViewPager2}"
+  api "androidx.legacy:legacy-preference-v14:${androidxPref}"
+  api "androidx.cardview:cardview:${androidxCardView}"
+  api "androidx.recyclerview:recyclerview:${androidxRecyclerView}"
+  //noinspection GradleDependency
+  api "androidx.sqlite:sqlite:${sqlite}"
+  //noinspection GradleDependency
+  api "androidx.room:room-rxjava2:${androidxRoom}"
+  //noinspection GradleDependency
+  api "androidx.room:room-runtime:${androidxRoom}"
+  api "androidx.legacy:legacy-support-core-utils:${androidxSupport}"
+  api 'androidx.constraintlayout:constraintlayout:2.1.2'
+  api "androidx.camera:camera-camera2:${androidxCamerax}"
+  api "androidx.camera:camera-lifecycle:${androidxCamerax}"
+  //noinspection GradleDependency
+  api "androidx.paging:paging-runtime:${androidxPaging}"
 
   testImplementation 'junit:junit:4.13.2'
 
