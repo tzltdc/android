@@ -19,6 +19,9 @@ dependencies {
   api "com.uber.autodispose:autodispose-android-archcomponents:${autoDispose}"
   api "io.reactivex.rxjava2:rxandroid:${rxandroid}"
   api "com.f2prateek.rx.preferences2:rx-preferences:${rxPreferences}"
+  api "com.jakewharton.threetenabp:threetenabp:${threetenabp}"
+  api "com.google.dagger:dagger-android:${dagger}"
+  api "com.google.dagger:dagger-android-support:${dagger}"
 
   //noinspection GradleDependency
   api "androidx.appcompat:appcompat:${androidxAppcompat}"
