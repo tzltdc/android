@@ -1,6 +1,4 @@
 buildscript {
-  apply from: 'dependencies.gradle'
-
   repositories {
     google()
     mavenCentral()

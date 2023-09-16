@@ -1,11 +1,10 @@
 apply plugin: 'com.android.library'
 
 android {
-  compileSdkVersion 30
+  compileSdk 34
   defaultConfig {
-    minSdkVersion 21
-    //noinspection OldTargetApi
-    targetSdkVersion 30
+    minSdk 24
+    targetSdk 34
   }
   compileOptions {
     sourceCompatibility = 1.8
@@ -15,46 +14,34 @@ android {
 
 dependencies {
 
-  api "com.google.android.material:material:${material}"
-  api "com.uber.autodispose:autodispose-android-archcomponents:${autoDispose}"
-  api "io.reactivex.rxjava2:rxandroid:${rxandroid}"
-  api "com.f2prateek.rx.preferences2:rx-preferences:${rxPreferences}"
-  api "com.jakewharton.threetenabp:threetenabp:${threetenabp}"
-  api "com.google.dagger:dagger-android:${dagger}"
-  api "com.google.dagger:dagger-android-support:${dagger}"
+  api "com.google.android.material:material:1.9.0"
+  api "com.uber.autodispose:autodispose-android-archcomponents:1.4.0"
+  api "io.reactivex.rxjava2:rxandroid:2.1.1"
+  api "com.f2prateek.rx.preferences2:rx-preferences:2.0.1"
+  api "com.jakewharton.threetenabp:threetenabp:1.2.2"
+  api "com.google.dagger:dagger-android:2.48"
+  api "com.google.dagger:dagger-android-support:2.48"
 
-  //noinspection GradleDependency
-  api "androidx.appcompat:appcompat:${androidxAppcompat}"
-  //noinspection GradleDependency
-  api "androidx.fragment:fragment:${androidxFragment}"
-  //noinspection GradleDependency
-  api "androidx.activity:activity:${androidxActivity}"
-  //noinspection GradleDependency
-  api "androidx.lifecycle:lifecycle-common-java8:${androidxLifecycle}"
-  //noinspection GradleDependency
-  api "androidx.lifecycle:lifecycle-process:${androidxLifecycle}"
-  //noinspection GradleDependency
-  api "androidx.core:core:${androidxCore}"
-  //noinspection GradleDependency
-  api "androidx.annotation:annotation:${androidxAnnotation}"
-  //noinspection GradleDependency
-  api "androidx.lifecycle:lifecycle-service:${androidxLifecycle}"
-  api "androidx.viewpager2:viewpager2:${androidxViewPager2}"
-  api "androidx.legacy:legacy-preference-v14:${androidxPref}"
-  api "androidx.cardview:cardview:${androidxCardView}"
-  api "androidx.recyclerview:recyclerview:${androidxRecyclerView}"
-  //noinspection GradleDependency
-  api "androidx.sqlite:sqlite:${sqlite}"
-  //noinspection GradleDependency
-  api "androidx.room:room-rxjava2:${androidxRoom}"
-  //noinspection GradleDependency
-  api "androidx.room:room-runtime:${androidxRoom}"
-  api "androidx.legacy:legacy-support-core-utils:${androidxSupport}"
-  api 'androidx.constraintlayout:constraintlayout:2.1.2'
-  api "androidx.camera:camera-camera2:${androidxCamerax}"
-  api "androidx.camera:camera-lifecycle:${androidxCamerax}"
-  //noinspection GradleDependency
-  api "androidx.paging:paging-runtime:${androidxPaging}"
+  api "androidx.appcompat:appcompat:1.6.1"
+  api "androidx.fragment:fragment:1.6.1"
+  api "androidx.activity:activity:1.7.2"
+  api "androidx.lifecycle:lifecycle-common-java8:2.6.2"
+  api "androidx.lifecycle:lifecycle-process:2.6.2"
+  api "androidx.core:core:1.12.0"
+  api "androidx.annotation:annotation:1.7.0"
+  api "androidx.lifecycle:lifecycle-service:2.6.2"
+  api "androidx.viewpager2:viewpager2:1.0.0"
+  api "androidx.legacy:legacy-preference-v14:1.0.0"
+  api "androidx.cardview:cardview:1.0.0"
+  api "androidx.recyclerview:recyclerview:1.3.1"
+  api "androidx.sqlite:sqlite:2.3.1"
+  api "androidx.room:room-rxjava2:2.5.2"
+  api "androidx.room:room-runtime:2.5.2"
+  api "androidx.legacy:legacy-support-core-utils:1.0.0"
+  api 'androidx.constraintlayout:constraintlayout:2.1.4'
+  api "androidx.camera:camera-camera2:1.2.3"
+  api "androidx.camera:camera-lifecycle:1.2.3"
+  api "androidx.paging:paging-runtime:3.2.1"
 
   testImplementation 'junit:junit:4.13.2'
 
